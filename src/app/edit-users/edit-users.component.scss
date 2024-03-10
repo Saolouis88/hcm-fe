@@ -1,0 +1,36 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Đảm bảo form được căn giữa theo chiều dọc trên toàn bộ viewport
+}
+.form-title {
+  text-align: center; // Căn giữa tiêu đề
+  margin-bottom: 20px; // Khoảng cách giữa tiêu đề và form
+  font-size: 24px; // Kích thước chữ của tiêu đề
+  color: #333; // Màu chữ của tiêu đề
+}
+
+form {
+  width: 400px; // Độ rộng của form
+  padding: 20px; // Khoảng cách lề bên trong form
+  background-color: #f9f9f9; // Màu nền của form
+  border-radius: 8px; // Bo tròn các góc của form
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Đổ bóng cho form
+}
+
+.form-group {
+  margin-bottom: 20px; // Khoảng cách giữa các nhóm trường trong form
+}
+
+label {
+  font-weight: bold; // In đậm nhãn các trường nhập liệu
+}
+
+.input-error {
+  margin-top: 5px; // Khoảng cách giữa các thông báo lỗi và trường nhập liệu
+}
+
+.btn-primary {
+  width: 100%; // Độ rộng của nút "Cập nhật thông tin"
+}

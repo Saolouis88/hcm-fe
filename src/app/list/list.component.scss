@@ -1,0 +1,89 @@
+p{
+  font-size: 25px;
+  padding: 20px;
+}
+.container {
+  background-color: #DDDDDD;
+  min-height: 100vh;
+
+
+}
+
+.content-wrapper {
+  padding: 20px; /* Thêm padding để tạo khoảng cách giữa nội dung và viền container */
+
+}
+
+.box-title {
+  list-style-type: none; /* Loại bỏ kiểu đánh dấu mặc định */
+  padding: 0; /* Xóa padding mặc định */
+  margin: 0; /* Xóa margin mặc định */
+  display: flex;
+}
+
+
+
+.title {
+  background-color: #DDDDDD;
+  margin-right: 10px; /* Khoảng cách giữa các phần tử */
+}
+.d-flex{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-outline-primary{
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #ffffff; /* Màu chữ */
+  background-color: #28a745; /* Màu nền */
+  border-color: #28a745;
+  margin-left: 945px;
+
+}
+.btn-outline-primary:hover{
+  color: #ffffff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.primary-users{
+  padding: 6px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.danger-users{
+  padding: 6px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+
+}
+/* Định dạng cho phần tìm kiếm */
+.form-control {
+  border-color: #333333; /* Màu viền */
+}
+
+.custom-search-input {
+  width: 200px; /* Đặt chiều dài mong muốn */
+
+}
+
+/* Định dạng cho nút tìm kiếm */
+.btn-outline-success {
+  color: #ffffff; /* Màu chữ */
+  background-color: #28a745; /* Màu nền */
+  border-color: #28a745; /* Màu viền */
+}
+
+/* Định dạng cho nút tìm kiếm khi hover */
+.btn-outline-success:hover {
+  color: #ffffff; /* Màu chữ */
+  background-color: #218838; /* Màu nền khi hover */
+  border-color: #1e7e34; /* Màu viền khi hover */
+}
+.table{
+  margin-bottom: 30px;
+}

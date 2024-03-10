@@ -1,0 +1,62 @@
+
+<app-menu></app-menu>
+<div class="title">
+<p class="">Quản lý người dùng</p>
+
+
+
+<div class="container">
+  <div class="content-wrapper">
+
+   <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+    <div class="d-flex">
+      <input class="form-control me-2 custom-search-input" type="search" placeholder="Nhập tên người dùng" aria-label="Search" formControlName="searchName" />
+      <button class="btn btn-outline-success" type="submit">Tìm</button>
+      <button class="btn btn-outline-primary" type="button" (click)="createrUsers()">Thêm</button>
+    </div>
+   </form>
+
+
+
+
+    <table class="table" id="">
+      <thead>
+        <tr>
+          <th>Mã ID</th>
+          <th>Họ và tên</th>
+          <th>Ngày/Tháng/Năm sinh</th>
+          <th>Số Điện Thoại</th>
+          <th>Email</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let item of users">
+          <td>{{item.id}}</td>
+          <td>{{item.fullName}}</td>
+          <td>{{item.dateOfBirth | date : 'dd/MM/yyyy'}}</td>
+          <td>{{item.phoneNumber}}</td>
+          <td>{{item.email}}</td>
+          <td>
+            <button class="primary-users" type="button" (click)="fixUsers(item)">Sửa</button>
+            <button class="danger-users" type="button" (click)="deleteUser(item)">Xóa</button>
+
+
+          </td>
+
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <app-pagination
+  [total]="50"
+  [pageSize]="searchForm.get('pageSize')?.value"
+  [pageIndex]="searchForm.get('pageIndex')?.value"
+  (onPageIndexChange)="onPageIndexChange($any($event))"></app-pagination>
+  <!-- <app-pagination [total]="100" [pageSize]="10" [pageIndex]="1" (onPageIndexChange)="onPageIndexChange($any($event))"></app-pagination> -->
+
+  </div>
+
+</div>

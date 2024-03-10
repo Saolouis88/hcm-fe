@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #00FFFF; /* Màu nền */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Định dạng cho nhãn "HELLO" */
+.navbar-brand {
+  font-size: 30px;
+  color: #333333; /* Màu chữ */
+  font-weight: bold; /* Đậm */
+}
+
+/* Định dạng cho các mục navbar */
+.navbar-nav .nav-item {
+  a{
+    display: inline-block;
+  }
+  margin-right: 15px; /* Khoảng cách giữa các mục */
+}
+
+/* Định dạng cho các liên kết trong navbar */
+.navbar-nav .nav-link {
+  color: #333333; /* Màu chữ */
+}
+
+/* Định dạng cho nút Toggle */
+.navbar-toggler {
+  border-color: #333333; /* Màu viền */
+}
+
+
+/* Định dạng cho menu dropdown */
+.dropdown-menu {
+  background-color: #ffffff; /* Màu nền */
+  border: 1px solid #cccccc; /* Viền */
+}
+
+/* Định dạng cho các mục trong menu dropdown */
+.dropdown-item {
+  color: #333333; /* Màu chữ */
+}
+
+.nav-item .login{
+  margin-right: 0;
+}
